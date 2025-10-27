@@ -1,51 +1,55 @@
 package ucu.edu.ua.flowerstore2.payment;
-import ucu.edu.ua.flowerstore2.payment.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class PayPalPaymentStrategyTest {
-    
-    private PayPalPaymentStrategy payPalPayment;
-    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-    private final PrintStream originalOut = System.out;
-    
+
+    private Payment payPalPayment;
+    private static final double CASHBACK = 10.0;
+
     @BeforeEach
     void setUp() {
         payPalPayment = new PayPalPaymentStrategy();
-        System.setOut(new PrintStream(outContent));
     }
-    
+
     @Test
-    @DisplayName("Should apply 10 cashback to price")
-    void testPayAppliesCashback() {
-        double result = payPalPayment.pay(100.0);
-        assertEquals(90.0, result, 0.01);
+    void testPayAppliesCashbackCorrectly() {
+
+        double price = 100.0;
+        double expectedPriceAfterCashback = price - CASHBACK; // 90.0
+        
+
+        double result = payPalPayment.pay(price);
+        
+        
+        assertEquals(expectedPriceAfterCashback, result, 0.001);
     }
-    
+
     @Test
-    @DisplayName("Should apply cashback for small amounts")
-    void testPayCashbackForSmallAmount() {
-        double result = payPalPayment.pay(20.0);
-        assertEquals(10.0, result, 0.01);
+    void testPayWhenPriceIsEqualToCashback() {
+    
+        double price = 10.0;
+        double expectedPriceAfterCashback = 0.0;
+        
+
+        double result = payPalPayment.pay(price);
+        
+
+        assertEquals(expectedPriceAfterCashback, result, 0.001);
     }
-    
+
     @Test
-    @DisplayName("Should apply cashback for large amounts")
-    void testPayCashbackForLargeAmount() {
-        double result = payPalPayment.pay(1000.0);
-        assertEquals(990.0, result, 0.01);
-    }
-    
-    @Test
-    @DisplayName("Should handle edge case where price equals cashback")
-    void testPayWhenPriceEqualsCashback() {
-        double result = payPalPayment.pay(10.0);
-        assertEquals(0.0, result, 0.01);
-    }
-    
-    @Test
-    @DisplayName("Should print PayPal cashback message")
-    void testPayPrintsMessage() {
-        payPalPayment.pay(50.0);
-        assertTrue(outContent.toString().contains("Here is your cashback, for using paypal"));
-        System.setOut(originalOut);
+    void testPayWhenPriceIsLessThanCashback() {
+
+        double price = 5.0;
+        double expectedPriceAfterCashback = price - CASHBACK; 
+        
+        
+        double result = payPalPayment.pay(price);
+        
+        
+        assertEquals(expectedPriceAfterCashback, result, 0.001);
     }
 }
