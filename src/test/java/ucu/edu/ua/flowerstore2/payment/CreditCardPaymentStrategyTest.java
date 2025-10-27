@@ -11,7 +11,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-@DisplayName("Credit Card Payment Strategy Tests")
 class CreditCardPaymentStrategyTest {
     
     private CreditCardPaymentStrategy creditCardPayment;

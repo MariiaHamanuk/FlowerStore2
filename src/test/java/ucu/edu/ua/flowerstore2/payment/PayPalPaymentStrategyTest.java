@@ -1,4 +1,5 @@
 package ucu.edu.ua.flowerstore2.payment;
+import ucu.edu.ua.flowerstore2.payment.*;
 
 class PayPalPaymentStrategyTest {
     

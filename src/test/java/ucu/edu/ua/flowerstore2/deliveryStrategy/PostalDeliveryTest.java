@@ -1,7 +1,5 @@
 package ucu.edu.ua.flowerstore2.delivery;
-
-
-@DisplayName("Postal Delivery Strategy Tests")
+import ucu.edu.ua.flowerstore2.deliveryStrategy.PostalDelivery;
 class PostalDeliveryTest {
     
     private PostalDelivery postalDelivery;
