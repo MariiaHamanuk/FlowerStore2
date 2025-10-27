@@ -1,4 +1,4 @@
-package flower.store;
+package ucu.edu.ua.flowerstore2.demo.flower;
 public class Main {
     private static final int PRICE = 1;
     private static final int DEFAULT_PRICES = 100;

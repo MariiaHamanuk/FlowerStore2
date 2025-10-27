@@ -1,4 +1,6 @@
-package flower.store;
+// package main.java.ucu.edu.ua.flowerstore2.demo.flower;
+
+package ucu.edu.ua.flowerstore2.demo.flower;
 import java.util.List;
 import java.util.ArrayList;
 import lombok.Data;

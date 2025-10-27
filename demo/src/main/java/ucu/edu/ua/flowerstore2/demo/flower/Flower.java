@@ -1,4 +1,7 @@
-package flower.store;
+package ucu.edu.ua.flowerstore2.demo.flower;
+
+// package main.java.ucu.edu.ua.flowerstore2.demo.flower;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

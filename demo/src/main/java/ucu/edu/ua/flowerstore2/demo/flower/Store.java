@@ -1,4 +1,4 @@
-package flower.store;
+package ucu.edu.ua.flowerstore2.demo.flower;
 
 // import java.util.LinkedList;
 import java.util.List;

@@ -1,8 +1,12 @@
-package flower.store;
+package ucu.edu.ua.flowerstore2.demo.flower;
 
-import lombok.Data;
+// import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+// @Data
+@Getter
+@Setter
 public class FlowerPack implements Product {
     private Flower f;
     private int amount;
