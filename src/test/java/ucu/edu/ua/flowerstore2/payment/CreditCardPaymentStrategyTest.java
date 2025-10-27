@@ -1,5 +1,4 @@
-
-package ucu.edu.ua.flowerstore2.demo;
+package ucu.edu.ua.flowerstore2.payment;
 
 import org.junit.jupiter.api.Test;
 

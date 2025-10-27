@@ -1,4 +1,4 @@
-package ucu.edu.ua.flowerstore2.demo.flower;
+package ucu.edu.ua.flowerstore2.flower;
 
 // package main.java.ucu.edu.ua.flowerstore2.demo.flower;
 
@@ -20,6 +20,7 @@ public class Flower implements Product {
     private FlowerColor color;
     private double price;
     private FlowerType flowerType;
+    
     public Flower(Flower other) {
         this.flowerType = other.flowerType;
         this.price = other.price;

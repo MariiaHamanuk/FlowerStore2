@@ -1,4 +1,4 @@
-package ucu.edu.ua.flowerstore2.demo.deliveryStrategy;
+package ucu.edu.ua.flowerstore2.deliveryStrategy;
 
 public class PostalDelivery implements Delivery {
     // System.out.println();

@@ -1,4 +1,4 @@
-package ucu.edu.ua.flowerstore2.demo.flower;
+package ucu.edu.ua.flowerstore2.flower;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,7 +1,5 @@
-package test.java.ucu.edu.ua.flowerstore2.demo;
+package ucu.edu.ua.flowerstore2.payment;
 
-
-@DisplayName("PayPal Payment Strategy Tests")
 class PayPalPaymentStrategyTest {
     
     private PayPalPaymentStrategy payPalPayment;

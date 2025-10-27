@@ -1,4 +1,4 @@
-package ucu.edu.ua.flowerstore2.demo.controller;
+package ucu.edu.ua.flowerstore2.controller;
 
 // import org.springframework.aot.hint.annotation.Reflective;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import ucu.edu.ua.flowerstore2.demo.payment.CreditCardPaymentStrategy;
-import ucu.edu.ua.flowerstore2.demo.payment.Payment;
+import ucu.edu.ua.flowerstore2.payment.CreditCardPaymentStrategy;
+import ucu.edu.ua.flowerstore2.payment.Payment;
 
 @RequestMapping("/Delivery")
 @RestController
