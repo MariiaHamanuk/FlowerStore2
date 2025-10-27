@@ -2,7 +2,7 @@ package ucu.edu.ua.flowerstore2.demo;
 
 import org.junit.jupiter.api.Test;
 
-import ucu.edu.ua.flowerstore2.demo.deliveryStrategy.*;
+import ucu.edu.ua.flowerstore2.deliveryStrategy.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -11,7 +11,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-@DisplayName("DHL Delivery Strategy Tests")
 class DHLDeliveryStrategyTest {
     
     private DHLDeliveryStrategy dhlDelivery;

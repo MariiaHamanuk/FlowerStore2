@@ -1,4 +1,4 @@
-package test.java.ucu.edu.ua.flowerstore2.delivery;
+package ucu.edu.ua.flowerstore2.delivery;
 
 
 @DisplayName("Postal Delivery Strategy Tests")

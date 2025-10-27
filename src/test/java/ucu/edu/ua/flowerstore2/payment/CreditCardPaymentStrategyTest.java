@@ -2,7 +2,7 @@ package ucu.edu.ua.flowerstore2.payment;
 
 import org.junit.jupiter.api.Test;
 
-import ucu.edu.ua.flowerstore2.demo.payment.*;
+import ucu.edu.ua.flowerstore2.payment.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
